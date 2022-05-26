@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Information general</title>
+        <meta name="author" content="Raimon Espasa Bou" />
+        <meta name="description" content="PEC3. Herramientas HTML y CSS II" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+    </head>
+    <body class="info-page">
+        <include src="./views/header.html"></include>
+        <main>
+            <article>
+                <header class="body-header">
+                    <h1>Información general</h1>
+                </header>
+                <div class="info-body">
+                    <p class="font-hight">
+                        Comparte con nosotros momentos inolvidables en el
+                        <strong>KING FESTIVAL</strong> con motivo de celebración
+                        de las fiestas regionales.
+                    </p>
+                    <p>
+                        Como cada veranos, la patronal realiza eventos con el
+                        objetivo de recaudar fondos y, entre ellos nos
+                        encontramos con <strong>King Festival</strong>, una
+                        ocasión annual y multitudinaria donde se reúnen las
+                        mejores bandas indie del panorama internacional y donde
+                        podrás disfrutar del mejor ambiente y música con
+                        instalaciones en la misma playa de la Malva rossa, no te
+                        lo puedes perder!
+                    </p>
+                    <p>
+                        Entre las distintas instalaciones del recinto
+                        encontrarás:
+                    </p>
+                    <ol class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <h4>Zona ChillOut</h4>
+                            <p>
+                                Como nuevo reclamo, para aquellos momentos en
+                                los que se quiera dejar descansar al cuerpo, la
+                                organización habilitará un área donde sonará
+                                principalmente música Lo-Fi y contará, entre
+                                otro mobiliario, con hamacas.
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4>Restaurantes y chiringuitos</h4>
+                            <p>
+                                En los alrededor de la carpa dispondrás tanto de
+                                chiringuitos playeros, donde disfrutar de un
+                                cocktail y unos aperitivos, como de restaurantes
+                                y terrazas donde poder sentarse a disfrutar una
+                                comida mucho más elaborada.
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4>Tiendas de <i>merch</i></h4>
+                            <p>
+                                ¿Quieres llevarte algún recuerdo o simplemente
+                                comprarte la camiseta de tu grupo favorito? Una
+                                de las áreas del recinto estará destinada a
+                                hacer accesible estos productos a todos los
+                                usuarios.
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4>Camping</h4>
+                            <p>
+                                En base al exitazo del camping durante el pasado
+                                evento, este año se ha ampliado la zona para
+                                poder ofrecer este servicio a más gente.
+                            </p>
+                        </li>
+                    </ol>
+
+                    <figure class="quote-wrapper">
+                        <blockquote class="quote__text">
+                            <p>
+                                "Llevo cinco años viniendo al King Festival y he
+                                visto cómo ha ido mejorando cada una de sus
+                                ediciones, cada vez me gusta más. Además, el
+                                festival aporta tanto al público que viene a
+                                disfrutar de las fiestas como a la ciudad."
+                            </p>
+                        </blockquote>
+                        <figcaption class="quote__author">
+                            — <cite>Miguel Dominguez</cite>, asistente edición
+                            2020.
+                        </figcaption>
+                    </figure>
+
+                    <div class="container">
+                        <div class="row">
+                            <p class="col font-hight with-middle-line">
+                                En esta edición somos más que nunca con un total
+                                de 3 días de conciertos y diferentes carpas para
+                                que escojas el estilo que más te guste.
+                            </p>
+                            <p class="col">
+                                Los conciertos empezarán cada día a parte de las
+                                12:00 del mediodía con lo que las mananas podrán
+                                ser aprovechadas por los asistentes para
+                                disfrutar de las playas valencianas, participar
+                                en alguna de la multitud de actividades
+                                convocadas o, para quien prefiere callejear,
+                                disfrutar tanto del río como de las calles de la
+                                ciudad.
+                            </p>
+                        </div>
+                    </div>
+                    <figure class="carousel-wrapper">
+                        <div
+                            id="carouselExampleControls"
+                            class="carousel slide article-img"
+                            data-bs-ride="carousel"
+                        >
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img
+                                        src="./assets/images/slider1.jpg"
+                                        class="d-block w-100"
+                                        alt="foto conciert"
+                                    />
+                                </div>
+                                <div class="carousel-item">
+                                    <img
+                                        src="./assets/images/slider3.jpg"
+                                        class="d-block w-100"
+                                        alt="foto conciert"
+                                    />
+                                </div>
+                            </div>
+                            <button
+                                class="carousel-control-prev"
+                                type="button"
+                                data-bs-target="#carouselExampleControls"
+                                data-bs-slide="prev"
+                            >
+                                <span
+                                    class="carousel-control-prev-icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button
+                                class="carousel-control-next"
+                                type="button"
+                                data-bs-target="#carouselExampleControls"
+                                data-bs-slide="next"
+                            >
+                                <span
+                                    class="carousel-control-next-icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <figcaption class="carousel__caption">
+                            Imágenes de ediciones anteriores,
+                            <cite>unsplash</cite>
+                        </figcaption>
+                    </figure>
+                    <p>
+                        Un año más, el King Festival vuelve más fuerte que
+                        nunca. Ya sea por su cartel o por el clima y ambiente,
+                        se trata de uno de uno de los eventos veraniegos que no
+                        vas a querer perderte.
+                    </p>
+                </div>
+            </article>
+        </main>
+        <include src="./views/footer.html"></include>
+        <script type="module" src="./assets/scripts/main.js"></script>
+    </body>
+</html>

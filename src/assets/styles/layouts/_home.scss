@@ -1,0 +1,298 @@
+/*------------------------------------*\
+  # GLOBAL
+\*------------------------------------*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: $font-family-sans-serif;
+  color: $text-main-color;
+}
+
+/*------------------------------------*\
+  # GENERAL STYLES
+\*------------------------------------*/
+
+.home-page {
+  main {
+    margin-top: space(8);
+    margin-bottom: space(9);
+
+    @include match-tablet {
+      margin-bottom: space(8);
+    }
+  }
+}
+
+.home-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-height: 600px;
+  background-image: url('../images/homeHeader.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*------------------------------------*\
+  # COUNTER
+\*------------------------------------*/
+
+.time-to-concert {
+  display: flex;
+  flex-direction: column;
+  max-width: calc($max-width + space(4));
+  padding: 0 space(2);
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.home-title {
+  padding: space(1) space(4);
+  font-size: 60px;
+  font-weight: 800;
+  background-color: white;
+
+  @include match-tablet {
+    font-size: 40px;
+  }
+}
+
+.home-subline {
+  padding: space(1) space(4);
+  font-size: 25px;
+  font-weight: 800;
+  background-color: white;
+
+  @include match-tablet {
+    font-size: 20px;
+  }
+}
+
+.timer {
+  padding: space(1) space(4);
+  font-size: 30px;
+  font-weight: 800;
+  text-align: right;
+  background-color: white;
+
+  @include match-tablet {
+    font-size: 20px;
+  }
+}
+
+.days {
+  margin-bottom: space(1);
+}
+
+.hours {
+  margin-bottom: space(1);
+}
+
+.min {
+  margin-bottom: space(1);
+}
+
+@supports (display: grid) {
+  .time-to-concert {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    max-width: calc($max-width + space(4));
+    padding: 0 space(2);
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    
+
+    @include match-mobile {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  
+  .home-title {
+    grid-column-start: 1;
+    grid-column-end: 6;
+  
+    padding: space(1) space(4);
+    font-size: 60px;
+    font-weight: 800;
+    background-color: white;
+
+    @include match-tablet {
+      font-size: 40px;
+    }
+  }
+  
+  .home-subline {
+    grid-column-start: 2;
+    grid-column-end: 6;
+  
+    padding: space(1) space(4);
+    font-size: 25px;
+    font-weight: 800;
+    background-color: white;
+
+    @include match-tablet {
+      font-size: 20px;
+    }
+  }
+  
+  .timer {
+    padding: space(1) space(4);
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    background-color: white;
+    
+
+    @include match-tablet {
+      font-size: 20px;
+    }
+  }
+  
+  .days {
+    grid-column-start: 4;
+    grid-column-end: 6;
+
+    margin-bottom: space(2);
+
+    @include match-mobile {
+      margin-bottom: space(1);
+    }
+  }
+  
+  .hours {
+    grid-column-start: 5;
+    grid-column-end:  7;
+
+    margin-bottom: space(2);
+
+    @include match-mobile {
+      margin-bottom: space(1);
+    }
+  }
+  
+  .min {
+    grid-column-start: 3;
+    grid-column-end: 6;
+
+    margin-bottom: space(2);
+
+    @include match-mobile {
+      margin-bottom: space(1);
+    }
+  }
+  
+  .sec {
+    display: flex;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    gap: 15px;
+    justify-content: center;
+  
+    &__time {
+      width: 40px;
+    }
+
+    @include match-tablet {
+      gap: 5px;
+    }
+  }
+}
+
+/*------------------------------------*\
+  # ARTISTS LISTS
+\*------------------------------------*/
+
+.show {
+  display: grid;
+  grid-template-areas:
+    "day date"
+    "bands bands";
+  grid-template-columns: min-content 1fr;
+  column-gap: 30px;
+  align-items: center;
+  justify-content: start;
+  max-width: calc(20px + $max-width);
+  padding-right: 50px;
+  padding-left: space(2);
+  margin: auto;
+  font-weight: 700;
+  line-height: 1;
+  text-align: left;
+  text-transform: uppercase;
+  
+  &:nth-of-type(2) {
+    grid-template-areas:
+      "date day"
+      "bands bands";
+    grid-template-columns: 1fr min-content;
+    justify-content: flex-end;
+    padding-right: space(2);
+    padding-left: 50px;
+    margin-top: space(8);
+    margin-bottom: space(8);
+    text-align: right;
+  }
+
+  @include match-tablet {
+    grid-template-areas:
+      "day"
+      "date"
+      "bands";
+    grid-template-columns: 1fr;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+
+    &:nth-of-type(2) {
+      grid-template-areas:
+        "day"
+        "date"
+        "bands";
+      grid-template-columns: 1fr;
+      padding-right: 10px;
+      padding-left: 10px;
+      margin-top: space(6);
+      margin-bottom: space(6);
+      text-align: center;
+    }
+  }
+}
+
+.show__day {
+  grid-area: day;
+  font-size: 45px;
+
+  @include match-tablet {
+    font-size: 30px;
+  }
+}
+
+.show__date {
+  grid-area: date;
+  font-size: 30px;
+  font-weight: 600;
+
+  @include match-tablet {
+    font-size: 25px;
+  }
+}
+
+.show__bands {
+  grid-area: bands;
+  font-size: 30px;
+  color: $text-sec-color;
+
+  @include match-tablet {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}

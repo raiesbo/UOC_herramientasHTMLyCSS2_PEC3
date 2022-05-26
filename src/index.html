@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="author" content="Raimon Espasa Bou" />
+        <meta name="description" content="PEC3. Herramientas HTML y CSS II" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <!-- do not remove this line! -->
+        <title>Homepage</title>
+    </head>
+    <body class="home-page">
+        <div class="home-header">
+            <include src="./views/header.html"></include>
+            <div class="time-to-concert">
+                <p class="days timer">
+                    <span class="days__time">00</span>
+                    <span class="days__text">Dias</span>
+                </p>
+                <p class="hours timer">
+                    <span class="hours__time">00</span>
+                    <span class="hours__text">Horas</span>
+                </p>
+                <p class="min timer">
+                    <span class="min__time">00</span>
+                    <span class="min__text">Minutos</span>
+                </p>
+                <p class="sec timer">
+                    <span class="sec__time">00</span>
+                    <span class="sec__text">Segundos</span>
+                </p>
+                <h1 class="home-title">King Festival 2022</h1>
+                <p class="home-subline">Valencia, Comunidad Valenciana</p>
+            </div>
+        </div>
+
+        <main>
+            <div class="show">
+                <p class="show__day">Viernes</p>
+                <p class="show__date">(08.07.22)</p>
+                <p class="show__bands">
+                    Radiohead • Arctic Monkeys • Pixies • The Cure •The Smiths •
+                    The Strokes • Cage the Elephant • Joy Division • R.E.M. •
+                    Tame Impala • Oasis • Blur • The Stone Roses • Gorillaz •
+                    The Killers • Nick Cave and the Bad Seeds • MGMT • The Black
+                    Keys • Foster the People
+                </p>
+            </div>
+            <div class="show">
+                <p class="show__day">Sábado</p>
+                <p class="show__date">(09.07.22)</p>
+                <p class="show__bands">
+                    Franz Ferdinand • Fleet Foxes • M83 • Of Monsters and Men •
+                    The Jesus and Mary Chain • Kasabian • Sufjan Stevens • Björk
+                    • Interpol • Foals • The National • The Lumineers • The
+                    Kooks • Modest Mouse • The Verve • My Bloody Valentine
+                </p>
+            </div>
+            <div class="show">
+                <p class="show__day">Domingo</p>
+                <p class="show__date">(10.07.22)</p>
+                <p class="show__bands">
+                    Florence and the Machine • Arcade Fire • Two Door Cinema
+                    Club • Death Cab for Cutie • The Shins • Bon Iver • Mac
+                    DeMarco • Sonic Youth • Yeah Yeah Yeahs • LCD Soundsystem •
+                    Pulp • Vampire Weekend • Beach House
+                </p>
+            </div>
+        </main>
+        <include src="./views/footer.html"></include>
+        <!-- <include src="./views/footer.html"></include> -->
+        <script type="module" src="./assets/scripts/main.js"></script>
+        <!-- do not remove this line! -->
+    </body>
+</html>
