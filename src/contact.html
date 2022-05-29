@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Contacto</title>
+        <meta name="author" content="Raimon Espasa Bou" />
+        <meta name="description" content="PEC2. Herramientas HTML y CSS II" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+    </head>
+    <body class="contact-page">
+        <include src="./views/header.html"></include>
+        <main>
+            <h1>Formulario de contacto</h1>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label"
+                        >Nombre completo:</label
+                    >
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Name"
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label"
+                        >Correcto electrónico:</label
+                    >
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="name@example.com"
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="topic" class="form-label">Asunto:</label>
+                    <textarea
+                        class="form-control"
+                        id="topic"
+                        rows="3"
+                    ></textarea>
+                </div>
+                <div class="button-wrapper">
+                    <button type="submit" class="btn btn-primary">
+                        Enviar
+                    </button>
+                </div>
+            </form>
+            <div>
+                <header>
+                    <h2>Galeria del evento</h2>
+                </header>
+                <div class="galery">
+                    <div class="galery__pic">
+                        <img
+                            src="./assets//images/gallery1.jpg"
+                            alt="galery images"
+                        />
+                    </div>
+                    <div class="galery__pic">
+                        <img
+                            src="./assets//images/gallery2.jpg"
+                            alt="galery images"
+                        />
+                    </div>
+                    <div class="galery__pic">
+                        <img
+                            src="./assets//images/gallery3.jpg"
+                            alt="galery images"
+                        />
+                    </div>
+                    <div class="galery__pic">
+                        <img
+                            src="./assets//images/gallery4.jpg"
+                            alt="galery images"
+                        />
+                    </div>
+                    <div class="galery__pic">
+                        <img
+                            src="./assets//images/gallery5.jpg"
+                            alt="galery images"
+                        />
+                    </div>
+                    <div class="galery__pic">
+                        <img
+                            src="./assets//images/gallery6.jpg"
+                            alt="galery images"
+                        />
+                    </div>
+                </div>
+            </div>
+        </main>
+        <include src="./views/footer.html"></include>
+        <script type="module" src="./assets/scripts/main.js"></script>
+    </body>
+</html>
