@@ -25,6 +25,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
 /**
  * Import layouts
  * It's a best practice to use a different partial for each page
