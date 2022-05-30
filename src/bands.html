@@ -15,73 +15,81 @@
     </head>
     <body class="bands-page">
         <include src="./views/header.html"></include>
-        <main class="max-w-[1100px] m-auto px-2">
-            <h1
-                class="text-4xl text-center font-extrabold uppercase px-2 desktop:py-8"
-            >
-                Grupos de música
-            </h1>
-            <div class="grid md:grid-cols-bands w-full gap-5">
-                <div class="band">
+        <main class="max-w-[1120px] m-auto px-2">
+            <h1>Grupos de música</h1>
+            <div class="grid md:grid-cols-bands w-full gap-6">
+                <div class="text-center">
                     <img
                         src="./assets/images/band1.jpg"
-                        class="band__image"
+                        class="max-h-[210px] w-full overflow-hidden object-cover"
                         alt="band image"
                     />
-                    <h3 class="band__name">Kasabian</h3>
+                    <h3 class="font-semibold uppercase text-xl mt-2">
+                        Kasabian
+                    </h3>
                     <small class="band__styles"
                         >Jangle pop
-                        <span class="badge bg-success">Confirmado</span></small
+                        <span
+                            class="bg-lime-700 text-white py-1 px-2 rounded-full text-xs font-semibold ml-1"
+                            >Confirmado</span
+                        ></small
                     >
-                    <p class="band__description">
+                    <p class="text-sm">
                         Grupo inglés formado en Leicester in 1997 por el
                         vocalista principal Tom Meighan, el guitarrista y
                         vocalista ocasional Sergio Pizzorno, el guitarrista
                         Chris Karloff y el bajista Chris Edwards.
                     </p>
                 </div>
-                <div class="band">
+                <div class="text-center">
                     <img
                         src="./assets/images/band2.jpg"
-                        class="band__image"
+                        class="max-h-[210px] w-full overflow-hidden object-cover"
                         alt="band image"
                     />
-                    <h3 class="band__name">Interpol</h3>
+                    <h3 class="font-semibold uppercase text-xl mt-2">
+                        Interpol
+                    </h3>
                     <small class="band__styles">Indie rock</small>
-                    <p class="band__description">
+                    <p class="text-sm">
                         Banda de rock estadounidense de Manhattan, Nueva York.
                         Formada en 1997, su formación original estaba formada
                         por Paul Banks, Daniel Kessler, Carlos Dengler y Greg
                         Drudy.
                     </p>
                 </div>
-                <div class="band">
+                <div class="text-center">
                     <img
                         src="./assets/images/band3.jpg"
-                        class="band__image"
+                        class="max-h-[210px] w-full overflow-hidden object-cover"
                         alt="band image"
                     />
-                    <h3 class="band__name">Pixies</h3>
+                    <h3 class="font-semibold uppercase text-xl mt-2">Pixies</h3>
                     <small class="band__styles"
                         >Noise rock
-                        <span class="badge bg-success">Confirmado</span></small
+                        <span
+                            class="bg-lime-700 text-white py-1 px-2 rounded-full text-xs font-semibold ml-1"
+                            >Confirmado</span
+                        ></small
                     >
-                    <p class="band__description">
+                    <p class="text-sm">
                         The Pixies es una banda estadounidense de rock
                         alternativo formada en 1986 en Boston, Massachusetts.
                         Hasta 2013, la banda estuvo compuesta por Black Francis,
                         Joey Santiago, Kim Deal y David Lovering.
                     </p>
                 </div>
-                <div class="band">
+                <div class="text-center">
                     <img
                         src="./assets/images/band4.jpg"
-                        class="band__image"
+                        class="max-h-[210px] w-full overflow-hidden object-cover"
                         alt="band image"
                     />
-                    <h3 class="band__name">Joy division</h3>
+                    <h3 class="font-semibold uppercase text-xl mt-2">
+                        Joy division
+                    </h3>
                     <small class="band__styles">Indie rock</small>
-                    <p class="band__description">
+                    <p class="text-sm">
                         Joy Division fue una banda de rock inglesa formada en
                         Salford en 1976. El grupo estaba formado por el
                         vocalista Ian Curtis, el guitarrista y teclista Bernard
@@ -90,33 +98,36 @@
                         asistir a un concierto de Sex Pistols.
                     </p>
                 </div>
-                <div class="band">
+                <div class="text-center">
                     <img
                         src="./assets/images/band5.jpg"
-                        class="band__image"
+                        class="max-h-[210px] w-full overflow-hidden object-cover"
                         alt="band image"
                     />
-                    <h3 class="band__name">MGMT</h3>
+                    <h3 class="font-semibold uppercase text-xl mt-2">MGMT</h3>
                     <small class="band__styles">Lo-fi</small>
-                    <p class="band__description">
+                    <p class="text-sm">
                         MGMT es una banda estadounidense de indie rock formada
                         en 2002 en Middletown, Connecticut. Fue fundada por los
                         multiinstrumentistas Andrew VanWyngarden y Ben
                         Goldwasser.
                     </p>
                 </div>
-                <div class="band">
+                <div class="text-center">
                     <img
                         src="./assets/images/band6.jpg"
-                        class="band__image"
+                        class="max-h-[210px] w-full overflow-hidden object-cover"
                         alt="band image"
                     />
-                    <h3 class="band__name">Oasis</h3>
+                    <h3 class="font-semibold uppercase text-xl mt-2">Oasis</h3>
                     <small class="band__styles"
                         >Britpop
-                        <span class="badge bg-success">Confirmado</span></small
+                        <span
+                            class="bg-lime-700 text-white py-1 px-2 rounded-full text-xs font-semibold ml-1"
+                            >Confirmado</span
+                        ></small
                     >
-                    <p class="band__description">
+                    <p class="text-sm">
                         Oasis es una banda de rock inglesa formada en Manchester
                         en 1991. Originalmente se los conocía como Rain antes de
                         convertirse en Oasis. El grupo inicialmente estaba
@@ -125,8 +136,8 @@
                     </p>
                 </div>
             </div>
-            <div class="button-wrapper">
-                <button type="button" class="btn btn-primary">
+            <div class="flex justify-center mt-9">
+                <button type="button" class="btn-primary">
                     Ver más bandas
                 </button>
             </div>
