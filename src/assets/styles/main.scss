@@ -33,7 +33,7 @@
     @apply text-2xl tablet:text-4xl text-center font-extrabold uppercase px-2 py-6 desktop:py-9;
   }
   h2 {
-    @apply text-xl tablet:text-2xl text-center font-extrabold uppercase px-2 py-5 desktop:py-7;
+    @apply text-xl tablet:text-3xl text-center font-extrabold uppercase px-2 py-5 desktop:pb-7 desktop:pt-9;
   }
   main {
     @apply max-w-[1120px] m-auto px-2
