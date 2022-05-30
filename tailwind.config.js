@@ -7,6 +7,10 @@ module.exports = {
       container: {
         center: true,
       },
+      gridTemplateColumns: {
+        'gallery': 'repeat(auto-fill, minmax(270px, 1fr))',
+        'bands': 'repeat(auto-fill, minmax(300px, 1fr))',
+      },
       spacing: {
         '1': '5px',
         '2': '10px',

@@ -15,9 +15,13 @@
     </head>
     <body class="bands-page">
         <include src="./views/header.html"></include>
-        <main>
-            <h1>Grupos de música</h1>
-            <div class="bands-wrapper">
+        <main class="max-w-[1100px] m-auto px-2">
+            <h1
+                class="text-4xl text-center font-extrabold uppercase px-2 desktop:py-8"
+            >
+                Grupos de música
+            </h1>
+            <div class="grid md:grid-cols-bands w-full gap-5">
                 <div class="band">
                     <img
                         src="./assets/images/band1.jpg"
