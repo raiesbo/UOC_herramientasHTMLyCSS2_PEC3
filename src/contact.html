@@ -57,48 +57,24 @@
                     <h2>Galeria del evento</h2>
                 </header>
                 <div class="grid md:grid-cols-gallery w-full gap-3">
-                    <div class="max-h-[200px] overflow-hidden">
-                        <img
-                            src="./assets//images/gallery1.jpg"
-                            alt="galery images"
-                            class="min-h-[200px] w-full overflow-hidden object-cover"
-                        />
-                    </div>
-                    <div class="max-h-[200px] overflow-hidden">
-                        <img
-                            src="./assets//images/gallery2.jpg"
-                            alt="galery images"
-                            class="min-h-[200px] w-full overflow-hidden object-cover object-center"
-                        />
-                    </div>
-                    <div class="max-h-[200px] overflow-hidden">
-                        <img
-                            src="./assets//images/gallery3.jpg"
-                            alt="galery images"
-                            class="min-h-[200px] w-full overflow-hidden object-cover object-center"
-                        />
-                    </div>
-                    <div class="max-h-[200px] overflow-hidden">
-                        <img
-                            src="./assets//images/gallery4.jpg"
-                            alt="galery images"
-                            class="min-h-[200px] w-full overflow-hidden object-cover object-center"
-                        />
-                    </div>
-                    <div class="max-h-[200px] overflow-hidden">
-                        <img
-                            src="./assets//images/gallery5.jpg"
-                            alt="galery images"
-                            class="min-h-[200px] w-full overflow-hidden object-cover object-center"
-                        />
-                    </div>
-                    <div class="max-h-[200px] overflow-hidden">
-                        <img
-                            src="./assets//images/gallery6.jpg"
-                            alt="galery images"
-                            class="max-h-[200px] w-full overflow-hidden object-cover object-center"
-                        />
-                    </div>
+                    <include src="views/galleryItem.html"
+                        >{ "url": "./assets//images/gallery1.jpg" }</include
+                    >
+                    <include src="views/galleryItem.html"
+                        >{ "url": "./assets//images/gallery2.jpg" }</include
+                    >
+                    <include src="views/galleryItem.html"
+                        >{ "url": "./assets//images/gallery3.jpg" }</include
+                    >
+                    <include src="views/galleryItem.html"
+                        >{ "url": "./assets//images/gallery4.jpg" }</include
+                    >
+                    <include src="views/galleryItem.html"
+                        >{ "url": "./assets//images/gallery5.jpg" }</include
+                    >
+                    <include src="views/galleryItem.html"
+                        >{ "url": "./assets//images/gallery6.jpg" }</include
+                    >
                 </div>
             </div>
         </main>

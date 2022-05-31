@@ -1,0 +1,18 @@
+<div class="text-center">
+    <img
+        src="{{ url }}"
+        class="max-h-[210px] w-full overflow-hidden object-cover"
+        alt="band image"
+    />
+    <h3 class="font-semibold uppercase text-xl mt-2">{{ name }}</h3>
+    <small class="band__styles">
+        {{ style }}
+        <if condition="confirmed">
+            <span
+                class="bg-lime-700 text-white py-1 px-2 rounded-full text-xs font-semibold ml-1"
+                >Confirmado</span
+            >
+        </if>
+    </small>
+    <p class="text-sm">{{ text }}</p>
+</div>
